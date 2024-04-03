@@ -1,0 +1,136 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Main Content */
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #007bff;
+}
+
+/* Projects Section */
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: #007bff;
+    font-size: 20px;
+}
+
+.social-links li a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
