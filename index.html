@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald Golightly - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to my Portfolio!</h1>
+            <!-- You can add more content here if desired -->
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm Emerald Golightly, currently studying a Bachelor of Commerce at Curtin University with a Double Major in Information Systems and Information Technology.</p>
+            <!-- Add more about yourself if desired -->
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- Your projects will be dynamically added here using JavaScript -->
+            <article class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <p class="description">Description of Project 1</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </article>
+            <!-- Add more projects here -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <!-- Your contact form will be added here -->
+            <form id="contact-form" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="input-field" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="input-field" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="input-field" rows="4" required></textarea>
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="social-links">
+            <li><a href="#" class="linkedin">LinkedIn</a></li>
+            <li><a href="#" class="github">GitHub</a></li>
+            <!-- Add more social media links here -->
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
