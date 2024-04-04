@@ -5,11 +5,7 @@ const body = document.body;
 toggleButton.addEventListener('click', function() {
     body.classList.toggle('dark-theme');
     // Store theme preference in localStorage
-    if (body.classList.contains('dark-theme')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
+    localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
 });
 
 // Check user's theme preference from localStorage
@@ -31,13 +27,15 @@ const closeModalButton = document.querySelector('.close-modal');
 
 projectImages.forEach(imageUrl => {
     const image = document.createElement('img');
-    image.src = `project_images/${imageUrl}`; // Assuming 'project_images' is the correct folder name
+    image.src = imageUrl; // No folder specified for direct image reference
     image.alt = 'Project Image';
     image.classList.add('project-image');
 
     image.addEventListener('click', function() {
         modal.style.display = 'block';
-        modalContent.textContent = image.alt; // Update with project details if needed
+        modalContent.textContent = 'Project details here'; // Update with project details if needed
+        // You can also set the modal content to an enlarged version of the clicked image:
+        // modalContent.innerHTML = `<img src="${image.src}" alt="Project Image">`;
     });
 
     document.getElementById('projects').appendChild(image);
