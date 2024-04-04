@@ -31,7 +31,7 @@ const closeModalButton = document.querySelector('.close-modal');
 
 projectImages.forEach(imageUrl => {
     const image = document.createElement('img');
-    image.src = imageUrl;
+    image.src = `project_images/${imageUrl}`; // Assuming 'project_images' is the correct folder name
     image.alt = 'Project Image';
     image.classList.add('project-image');
 
