@@ -105,3 +105,4 @@ function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+/* reference https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303 /*
