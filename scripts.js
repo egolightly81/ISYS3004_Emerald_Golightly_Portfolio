@@ -25,17 +25,15 @@ const modal = document.querySelector('.modal');
 const modalContent = modal.querySelector('.modal-content');
 const closeModalButton = document.querySelector('.close-modal');
 
-projectImages.forEach(imageUrl => {
+projectImages.forEach((imageUrl, index) => {
     const image = document.createElement('img');
-    image.src = imageUrl; // No folder specified for direct image reference
-    image.alt = 'Project Image';
+    image.src = imageUrl;
+    image.alt = `Project ${index + 1}`;
     image.classList.add('project-image');
 
     image.addEventListener('click', function() {
         modal.style.display = 'block';
-        modalContent.textContent = 'Project details here'; // Update with project details if needed
-        // You can also set the modal content to an enlarged version of the clicked image:
-        // modalContent.innerHTML = `<img src="${image.src}" alt="Project Image">`;
+        modalContent.textContent = `Details of Project ${index + 1}`;
     });
 
     document.getElementById('projects').appendChild(image);
