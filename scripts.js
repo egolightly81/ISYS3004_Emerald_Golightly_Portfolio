@@ -1,39 +1,30 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const projectButtons = document.querySelectorAll('.project-button');
-    const modalContent = document.getElementById('modal-content');
-    const modal = document.getElementById('modal');
-    const closeModalButton = document.getElementById('close-modal');
+// Dark mode toggle
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-    projectButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const projectNumber = parseInt(button.dataset.projectNumber);
-            displayProjectDetails(projectNumber);
-        });
-    });
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+}
 
-    closeModalButton.addEventListener('click', closeModal);
+toggleSwitch.addEventListener('change', switchTheme, false);
 
-    function displayProjectDetails(projectNumber) {
-        // Update modal content based on project number
-        if (projectNumber === 1) {
-            modalContent.textContent = 'Details of Project 1';
-        } else if (projectNumber === 2) {
-            modalContent.textContent = 'Details of Project 2';
-        } else if (projectNumber === 3) {
-            modalContent.textContent = 'Details of Project 3';
-        }
+// Project gallery modal
+const projectImages = document.querySelectorAll('.project-img');
+const modal = document.querySelector('.modal');
+const modalImg = document.querySelector('.modal-img');
+const modalDesc = document.querySelector('.modal-desc');
 
-        // Display the modal
+projectImages.forEach(img => {
+    img.addEventListener('click', () => {
         modal.style.display = 'block';
-    }
-
-    function closeModal() {
-        modal.style.display = 'none';
-    }
-
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
+        modalImg.src = img.src;
+        modalDesc.textContent = img.alt;
     });
+});
+
+modal.addEventListener('click', () => {
+    modal.style.display = 'none';
 });

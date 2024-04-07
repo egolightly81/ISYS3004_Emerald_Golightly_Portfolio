@@ -1,37 +1,48 @@
-/* Reset font to Arial */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
+/* Resetting default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: space-around;
 }
 
-/* Adjust the spacing between headings and the top of the page */
-h1, h2 {
-    margin-top: 10px; /* Adjust as needed */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-/* Additional styles for specific elements */
-/* For example, adjust the margin-top for h1 in the #home section */
-#home h1 {
-    margin-top: 20px; /* Adjust as needed */
+nav a:hover {
+    color: yellow;
 }
 
-/* For h2 elements in specific sections */
-#about h2 {
-    margin-top: 15px; /* Adjust as needed */
+/* Styles for different sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
 }
 
-#projects h2 {
-    margin-top: 15px; /* Adjust as needed */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
-#contact h2 {
-    margin-top: 15px; /* Adjust as needed */
-}
+/* Additional styles for responsiveness can be added here */
