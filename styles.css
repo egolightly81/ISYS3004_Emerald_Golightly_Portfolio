@@ -1,11 +1,8 @@
 /* Resetting default styles */
-
-/* Heading at the top of the website */
-.header h1{
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Basic styling */
@@ -99,4 +96,16 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 999;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
 }
