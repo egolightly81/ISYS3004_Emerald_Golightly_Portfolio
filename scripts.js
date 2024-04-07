@@ -29,3 +29,9 @@ window.addEventListener('click', function(event) {
     }
 });
 
+// Ensure modal content is empty initially
+document.addEventListener('DOMContentLoaded', function() {
+    const modalContent = document.querySelector('.modal-content');
+    modalContent.textContent = '';
+});
+
