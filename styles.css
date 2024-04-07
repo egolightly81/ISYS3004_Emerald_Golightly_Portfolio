@@ -1,13 +1,18 @@
 /* General Styles */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Voga, Arial, sans-serif; /* Voga as the primary font, fallback to Arial and sans-serif */
     color: #333;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Added box-sizing property */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
 
 h1, h2 {
     color: #007bff;
