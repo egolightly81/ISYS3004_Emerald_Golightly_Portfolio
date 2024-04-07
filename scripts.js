@@ -48,8 +48,21 @@ function handleSubmit(event) {
     }
 
     // Send form data to backend or perform other actions (e.g., display success message)
-    alert(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+    displayThankYouMessage();
     contactForm.reset(); // Reset form after submission
 }
 
 contactForm.addEventListener('submit', handleSubmit);
+
+// Function to display thank you message
+function displayThankYouMessage() {
+    const thankYouMessage = document.createElement('div');
+    thankYouMessage.textContent = 'Thank you for your email! 😊';
+    thankYouMessage.classList.add('thank-you-message');
+    document.body.appendChild(thankYouMessage);
+
+    // Remove the message after 3 seconds
+    setTimeout(() => {
+        thankYouMessage.remove();
+    }, 3000);
+}

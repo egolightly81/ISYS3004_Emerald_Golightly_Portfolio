@@ -31,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: whitesmoke;
 }
 
 /* Styles for different sections */
@@ -84,10 +84,16 @@ button:hover {
     background-color: #555;
 }
 
-/* Heading at the top of the website */
-.header {
-    text-align: center;
-    background-color: #6785e7;
-    color: #fff;
-    padding: 20px 0;
+/* Thank you message styles */
+.thank-you-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
 }
