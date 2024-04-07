@@ -1,7 +1,6 @@
-/* General Styles */
-
+/* Reset font to Arial */
 body {
-    font-family: Voga, Arial, sans-serif; /* Voga as the primary font, fallback to Arial and sans-serif */
+    font-family: Arial, sans-serif;
     color: #333;
     background-color: #f8f9fa;
     margin: 0;
@@ -13,92 +12,28 @@ body {
     min-height: 100vh;
 }
 
-
+/* Adjust the spacing between headings and the top of the page */
 h1, h2 {
-    color: #007bff;
+    margin-top: 10px; /* Adjust as needed */
 }
 
-a {
-    text-decoration: none;
-    color: #007bff;
+/* Additional styles for specific elements */
+/* For example, adjust the margin-top for h1 in the #home section */
+#home h1 {
+    margin-top: 20px; /* Adjust as needed */
 }
 
-a:hover {
-    text-decoration: underline;
+/* For h2 elements in specific sections */
+#about h2 {
+    margin-top: 15px; /* Adjust as needed */
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#projects h2 {
+    margin-top: 15px; /* Adjust as needed */
 }
 
-/* Header */
-
-header {
-    display: none; /* Hide the header by default */
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    box-sizing: border-box; /* Added box-sizing property */
+#contact h2 {
+    margin-top: 15px; /* Adjust as needed */
 }
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Main Content */
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    color: #007bff;
-}
-
-/* Projects Section */
-
-.project {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box; /* Added box-sizing property */
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Contact Section */
-
-.input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box; /* Added box-sizing property */
-}
-
-.submit-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-   
 
 /* updates made, reference box format Chat GPT https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303*/
