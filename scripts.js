@@ -28,3 +28,28 @@ projectImages.forEach(img => {
 modal.addEventListener('click', () => {
     modal.style.display = 'none';
 });
+
+// Form submission
+const contactForm = document.getElementById('contact-form');
+
+function handleSubmit(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    const name = contactForm.elements['name'].value;
+    const email = contactForm.elements['email'].value;
+    const phone = contactForm.elements['phone'].value;
+    const message = contactForm.elements['message'].value;
+
+    // Validate form inputs (you can add more validation logic as needed)
+    if (!name || !email || !phone || !message) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    // Send form data to backend or perform other actions (e.g., display success message)
+    alert(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+    contactForm.reset(); // Reset form after submission
+}
+
+contactForm.addEventListener('submit', handleSubmit);

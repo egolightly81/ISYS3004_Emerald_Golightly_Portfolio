@@ -8,6 +8,8 @@
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 nav {
@@ -29,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-    color: yellow;
+    color: white;
 }
 
 /* Styles for different sections */
@@ -45,4 +47,47 @@ footer {
     padding: 10px;
 }
 
-/* Additional styles for responsiveness can be added here */
+/* Contact form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Heading at the top of the website */
+.header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
