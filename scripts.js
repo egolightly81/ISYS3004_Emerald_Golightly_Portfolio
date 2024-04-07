@@ -1,37 +1,41 @@
-/* updated no images ref ChatGPT: https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303 */
+/* updated no images ref ChatGPT: https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303*/
 
-function displayProjectDetails(projectNumber) {
-    const modalContent = document.querySelector('.modal-content');
+document.addEventListener('DOMContentLoaded', function() {
+    const projectButtons = document.querySelectorAll('.project-button');
+    const modalContent = document.getElementById('modal-content');
+    const modal = document.getElementById('modal');
+    const closeModalButton = document.getElementById('close-modal');
 
-    // Update modal content based on project number
-    if (projectNumber === 1) {
-        modalContent.textContent = 'Details of Project 1';
-    } else if (projectNumber === 2) {
-        modalContent.textContent = 'Details of Project 2';
-    } else if (projectNumber === 3) {
-        modalContent.textContent = 'Details of Project 3';
+    projectButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const projectNumber = parseInt(button.dataset.projectNumber);
+            displayProjectDetails(projectNumber);
+        });
+    });
+
+    closeModalButton.addEventListener('click', closeModal);
+
+    function displayProjectDetails(projectNumber) {
+        // Update modal content based on project number
+        if (projectNumber === 1) {
+            modalContent.textContent = 'Details of Project 1';
+        } else if (projectNumber === 2) {
+            modalContent.textContent = 'Details of Project 2';
+        } else if (projectNumber === 3) {
+            modalContent.textContent = 'Details of Project 3';
+        }
+
+        // Display the modal
+        modal.style.display = 'block';
     }
 
-    // Display the modal
-    const modal = document.querySelector('.modal');
-    modal.style.display = 'block';
-}
-
-function closeModal() {
-    const modal = document.querySelector('.modal');
-    modal.style.display = 'none';
-}
-
-window.addEventListener('click', function(event) {
-    const modal = document.querySelector('.modal');
-    if (event.target === modal) {
+    function closeModal() {
         modal.style.display = 'none';
     }
-});
 
-// Ensure modal content is empty initially
-document.addEventListener('DOMContentLoaded', function() {
-    const modalContent = document.querySelector('.modal-content');
-    modalContent.textContent = '';
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
-
