@@ -1,18 +1,14 @@
-/* updated with file path corrected, ref ChatGPT: https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303 */
+/* updated no images ref ChatGPT: https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303 */
 
 function displayProjectDetails(projectNumber) {
-    const projectImage = document.getElementById('projectImage');
     const modalContent = document.querySelector('.modal-content');
 
-    // Update image source based on project number
+    // Update modal content based on project number
     if (projectNumber === 1) {
-        projectImage.src = 'images/project1_IoT.jpg';
         modalContent.textContent = 'Details of Project 1';
     } else if (projectNumber === 2) {
-        projectImage.src = 'images/project2_AH.jpg';
         modalContent.textContent = 'Details of Project 2';
     } else if (projectNumber === 3) {
-        projectImage.src = 'images/project3_carboncapture.jpg';
         modalContent.textContent = 'Details of Project 3';
     }
 
@@ -32,3 +28,4 @@ window.addEventListener('click', function(event) {
         modal.style.display = 'none';
     }
 });
+
