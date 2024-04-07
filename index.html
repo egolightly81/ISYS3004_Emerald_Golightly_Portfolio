@@ -1,5 +1,5 @@
-/* updates to inlcude correct file path, GitHub consulted, ref: https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303 */
-
+/* updates to structure change ref: https://chat.openai.com/share/2f9ff557-4e74-4ea8-9a5a-704717523303*
+/
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,9 +34,9 @@
 
     <section id="projects">
         <h2>My Projects</h2>
-        <button class="project-button" onclick="displayProjectDetails(1)">Project 1</button>
-        <button class="project-button" onclick="displayProjectDetails(2)">Project 2</button>
-        <button class="project-button" onclick="displayProjectDetails(3)">Project 3</button>
+        <button class="project-button" data-project-number="1">Project 1</button>
+        <button class="project-button" data-project-number="2">Project 2</button>
+        <button class="project-button" data-project-number="3">Project 3</button>
     </section>
 
     <section id="modal" class="modal">
