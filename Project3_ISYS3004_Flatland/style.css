@@ -1,0 +1,39 @@
+/* Name: style.css
+   Author: EMERALD GOLIGHTLY
+   Description: Styling for Flatland
+   Version: 1.0
+   Chat GPT refrenced https://chat.openai.com/share/8017b117-d659-4873-b3a3-ed07550957e8
+*/
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    box-sizing: border-box;
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the page takes up at least the viewport height */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center horizontally */
+  }
+  
+  #square {
+    width: 200px;
+    height: 200px;
+    background: red;
+  }
+  
+  #words {
+    width: 250px;
+    height: 200px;
+    font-size: 25px;
+    text-align: right;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10%;
+    border-right: 5px solid red;
+  }
