@@ -1,0 +1,70 @@
+body {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header h1 {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav{
+    background-color: darkgray;
+    text-align: left;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#featured {
+    background-color: lightgray;
+    float: left;
+    width: 200px;
+}
+
+#content {
+    float: right;
+    width: 500px;
+}
+
+#extras {
+    background-color: lightgray;
+    float: left;
+    width: 200px;
+}
+
+#extras p {
+    font-size: 50%;
+    text-align: center;
+    line-height: normal;
+}
+
+footer {
+    clear:both; 
+    text-align: center;
+    background-color: darkgray;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+p {
+    margin: 0 10px 10px;
+}
