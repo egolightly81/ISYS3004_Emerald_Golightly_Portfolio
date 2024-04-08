@@ -15,7 +15,7 @@ body {
 .header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -35,38 +35,50 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Section Styles */
 section {
-    padding: 20px 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* Form Styles */
 form {
     max-width: 400px;
     margin: 0 auto;
+    text-align: left;
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 form input,
 form textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 form button {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
 /* Footer Styles */
@@ -74,7 +86,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .social-links {
@@ -90,4 +102,5 @@ footer {
 .social-links li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
