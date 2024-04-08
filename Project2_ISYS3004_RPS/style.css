@@ -1,0 +1,26 @@
+body {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 10px solid red;
+    width: 20%;
+    text-align: center;
+}
+
+.instruction {
+    font-size: 14px; /* Updated font size to use pixels */
+    text-align: left;
+}
+
+/* Circle CSS from following site: https://www.w3schools.com/howto/howto_css_circles.asp */
+.circle {
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 50%;
+    font-size: 0.9em; /* Updated font size to use relative units */
+}
+
+.circle:hover {
+    background-color: gray;
+}
