@@ -11,6 +11,11 @@ body {
         are not touching/on/against the boarder */
 }
 
+p { /* lets make sure paragraphs have space around the text and not touching other elements */
+    margin: 2px;
+    padding: 3px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
