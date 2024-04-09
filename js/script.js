@@ -1,12 +1,3 @@
-// Toggle switch
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-    toggleSwitch.addEventListener('change', switchTheme, false);
-});
-
-console.log(toggleSwitch); // Check if toggleSwitch is null
-toggleSwitch.addEventListener('change', switchTheme, false);
-
 // Project gallery modal
 const projectImages = document.querySelectorAll('.project-img');
 const modal = document.querySelector('.modal');
@@ -50,17 +41,5 @@ function handleSubmit(event) {
 
 contactForm.addEventListener('submit', handleSubmit);
 
-// Function to display thank you message
-function displayThankYouMessage() {
-    const thankYouMessage = document.createElement('div');
-    thankYouMessage.textContent = 'Thank you for your email! 😊';
-    thankYouMessage.classList.add('thank-you-message');
-    document.body.appendChild(thankYouMessage);
-
-    // Remove the message after 3 seconds
-    setTimeout(() => {
-        thankYouMessage.remove();
-    }, 3000);
-}
 
 // https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1 
