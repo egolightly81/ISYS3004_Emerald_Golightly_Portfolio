@@ -1,15 +1,8 @@
-// Dark mode toggle
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
+// Toggle switch
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    toggleSwitch.addEventListener('change', switchTheme, false);
+});
 
 // Project gallery modal
 const projectImages = document.querySelectorAll('.project-img');
@@ -66,3 +59,5 @@ function displayThankYouMessage() {
         thankYouMessage.remove();
     }, 3000);
 }
+
+// https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1 
