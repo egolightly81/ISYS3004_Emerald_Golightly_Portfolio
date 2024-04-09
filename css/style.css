@@ -1,14 +1,10 @@
 
 body {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;  /* center the image */
-    margin-top: 40px; /* move top of page down a little */
-    width: 60%;  /* use 60% of the page, allows element to 'scale' proportionally */
-    background-color: #fff;
-    border: 10px solid #044375;  /* draw a solid boarder around the element */
-    padding: 10px; /* Shorthand for adding padding to each side of 'box':
-        10 top, 10 bottom, 10 left, 10 right.  Basically this means the contents of element
-        are not touching/on/against the boarder */
 }
 
 p { /* lets make sure paragraphs have space around the text and not touching other elements */
@@ -16,67 +12,51 @@ p { /* lets make sure paragraphs have space around the text and not touching oth
     padding: 3px;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Header Styles */
 header {
-    height: 250px;
-    background-color: #cccccc; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: lightgray;
 }
 
 header h1 {
-    padding: 30px 0 30px 30px;
-    color: black;
-    font-weight: bolder;  /* make text 'bold' */
-    letter-spacing: -1px;  /* stylistic choice, there is a 'lot' you can control with CSS, Google for options */
+    height: 80px;
+    line-height: 80px;
 }
 
+
 /* Navigation Styles */
-nav {
-    margin: 10px 0 0 0;
+nav{
+    background-color: darkgray;
+    text-align: left;
     padding: 10px;
-    background-color: #044375;
 }
 
 nav a {
-    color: #fff;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
-nav a:hover { /* Pseudo Class, nowhere in the document is there a 'id' or 'class' called 'hover'.
-    lets change the appearance a anchor link when we hover the mouse over the element.  You can
-    style 'hover' for any element, more common for anchor links which are used for navigation */
-    background-color: #ddd;
+nav a:hover {
+    background-color: lightgray;
     color: black;
 }
 
 #featured {
-    float: left;  /* start at the left */
-    width: 100%;  /* take up the complete 'row' */
+    background-color: lightgray;
+    float: left;
+    width: 200px;
 }
 
 #content {
-    float: left;
-    width: 65%;
+    float: right;
+    width: 500px;
 }
 
 #extras {
-    float: right;
-    width: 20%;
-}
-
-#extras h2 {
-    padding: 5px;
-    text-align: center;
-    font-weight: normal;
-    background-color: #eee;
+    background-color: lightgray;
+    float: left;
+    width: 200px;
 }
 
 #extras p {
@@ -85,17 +65,18 @@ nav a:hover { /* Pseudo Class, nowhere in the document is there a 'id' or 'class
     line-height: normal;
 }
 
-/* Section Styles */
-section {
-    padding: 40px 0;
+footer {
+    clear:both; 
+    text-align: center;
+    background-color: darkgray;
 }
-
-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: bold;
+footer a {
+    color: white;
+    text-decoration: none;
 }
-
+p {
+    margin: 0 10px 10px;
+}
 /* Form Styles */
 form {
     max-width: 400px;
@@ -130,10 +111,18 @@ form button {
 /* Footer Styles */
 
 footer {
-    clear: both; /* change back to vertical flow (default) */
-    padding: 10px;
-    background-color: #eee;
+    clear:both; 
+    text-align: center;
+    background-color: darkgray;
 }
+footer a {
+    color: white;
+    text-decoration: none;
+}
+p {
+    margin: 0 10px 10px;
+}
+
 .social-links {
     list-style-type: none;
     padding: 0;
@@ -149,9 +138,6 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
-
-
-
 /* document changes here  */
 
 //chatgpt https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1 and W3 https://www.w3schools.com/Css/css_float.asp 
