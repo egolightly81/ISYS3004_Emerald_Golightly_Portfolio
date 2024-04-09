@@ -115,15 +115,15 @@ footer {
 /* Float Layout */
 .float-left {
     float: left;
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
 }
 
 .float-right {
     float: right;
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
 }
 
-/* Example Usage */
+/* current format test */
 #home {
     background-color: lightblue;
 }
@@ -132,7 +132,7 @@ footer {
     background-color: lightgreen;
 }
 
-/* Adjust styles as needed */
 
+/* document changes here  */
 
 //chatgpt https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1 and W3 https://www.w3schools.com/Css/css_float.asp 
