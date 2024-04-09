@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleSwitch.addEventListener('change', switchTheme, false);
 });
 
+console.log(toggleSwitch); // Check if toggleSwitch is null
+toggleSwitch.addEventListener('change', switchTheme, false);
+
 // Project gallery modal
 const projectImages = document.querySelectorAll('.project-img');
 const modal = document.querySelector('.modal');
