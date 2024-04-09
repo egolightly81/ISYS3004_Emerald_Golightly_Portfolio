@@ -1,8 +1,14 @@
-/* Global Styles */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;  /* center the image */
+    margin-top: 40px; /* move top of page down a little */
+    width: 60%;  /* use 60% of the page, allows element to 'scale' proportionally */
+    background-color: #fff;
+    border: 10px solid #044375;  /* draw a solid boarder around the element */
+    padding: 10px; /* Shorthand for adding padding to each side of 'box':
+        10 top, 10 bottom, 10 left, 10 right.  Basically this means the contents of element
+        are not touching/on/against the boarder */
 }
 
 .container {
