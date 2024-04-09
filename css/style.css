@@ -1,21 +1,4 @@
 /* Global Styles */
-
-.header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.header h1 {
-    font-family: Arial, sans-serif;
-    font-size: 36px; /* Adjust the font size as needed */
-    margin: 0;
-    background-color: #333; /* Dark grey background */
-    padding: 10px 20px; /* Padding inside the heading */
-    display: inline-block; /* Center the heading horizontally */
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,6 +17,15 @@ body {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+.header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px; /* Adjust the font size as needed */
+    margin: 0;
+    background-color: #333; /* Dark grey background */
+    padding: 10px 20px; /* Padding inside the heading */
+    display: inline-block; /* Center the heading horizontally */
 }
 
 /* Navigation Styles */
@@ -121,3 +113,5 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
+
+//chatgpt https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1 
