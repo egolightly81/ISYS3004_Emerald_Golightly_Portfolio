@@ -1,4 +1,21 @@
 /* Global Styles */
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px; /* Adjust the font size as needed */
+    margin: 0;
+    background-color: #333; /* Dark grey background */
+    padding: 10px 20px; /* Padding inside the heading */
+    display: inline-block; /* Center the heading horizontally */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
