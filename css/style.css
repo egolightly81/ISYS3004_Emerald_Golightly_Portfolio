@@ -1,4 +1,3 @@
-
 body {
     width: 600px;
     margin: 20 auto;
@@ -6,23 +5,14 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-p { /* lets make sure paragraphs have space around the text and not touching other elements */
-    margin: 5px;
-    padding: 10px;
-}
-
 /* Header Styles */
 header {
     background-color: lightgray;
 }
-
 header h1 {
     height: 40px;
     line-height: 50px;
 }
-
-
 /* Navigation Styles */
 nav{
     background-color: darkgray;
@@ -47,24 +37,20 @@ nav a:hover {
     float: left;
     width: 200px;
 }
-
 #content {
     float: right;
     width: 500px;
 }
-
 #extras {
     background-color: lightgray;
     float: left;
     width: 200px;
 }
-
 #extras p {
     font-size: 40%;
     text-align: center;
     line-height: normal;
 }
-
 footer {
     clear:both; 
     text-align: center;
@@ -138,6 +124,5 @@ p {
     text-decoration: none;
     font-weight: bold;
 }
-/* document changes here  */
 
-//chatgpt https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1 and W3 https://www.w3schools.com/Css/css_float.asp 
+
