@@ -128,13 +128,12 @@ form button {
 }
 
 /* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
 
+footer {
+    clear: both; /* change back to vertical flow (default) */
+    padding: 10px;
+    background-color: #eee;
+}
 .social-links {
     list-style-type: none;
     padding: 0;
@@ -151,25 +150,6 @@ footer {
     font-weight: bold;
 }
 
-/* Float Layout */
-.float-left {
-    float: left;
-    width: 50%; 
-}
-
-.float-right {
-    float: right;
-    width: 50%; 
-}
-
-/* current format test */
-#home {
-    background-color: lightblue;
-}
-
-#about {
-    background-color: lightgreen;
-}
 
 
 /* document changes here  */
