@@ -57,6 +57,34 @@ nav a:hover { /* Pseudo Class, nowhere in the document is there a 'id' or 'class
     color: black;
 }
 
+#featured {
+    float: left;  /* start at the left */
+    width: 100%;  /* take up the complete 'row' */
+}
+
+#content {
+    float: left;
+    width: 65%;
+}
+
+#extras {
+    float: right;
+    width: 20%;
+}
+
+#extras h2 {
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #eee;
+}
+
+#extras p {
+    font-size: 50%;
+    text-align: center;
+    line-height: normal;
+}
+
 /* Section Styles */
 section {
     padding: 40px 0;
