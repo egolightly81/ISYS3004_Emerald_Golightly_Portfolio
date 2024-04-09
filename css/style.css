@@ -123,10 +123,16 @@ footer {
     width: 50%; /* Adjust as needed */
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+/* Example Usage */
+#home {
+    background-color: lightblue;
 }
+
+#about {
+    background-color: lightgreen;
+}
+
+/* Adjust styles as needed */
+
 
 //chatgpt https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1 and W3 https://www.w3schools.com/Css/css_float.asp 
