@@ -49,17 +49,6 @@ nav a:hover {
     line-height: normal;
 }
 
-footer {
-    clear: both;
-    text-align: center;
-    background-color: darkgray;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
 p {
     margin: 0 12px 12px;
 }
