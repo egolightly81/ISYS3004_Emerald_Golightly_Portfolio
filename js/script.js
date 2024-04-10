@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projectImages = document.querySelectorAll('.project-img');
-    const modal = document.querySelector('.modal');
+    const modal = document.getElementById('modal'); // Updated selection using ID
     const modalImg = document.querySelector('.modal-img');
     const modalDesc = document.querySelector('.modal-desc');
 
