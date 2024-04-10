@@ -8,6 +8,7 @@ body {
 
 header {
     background-color: rgb(30, 22, 176);
+    color: white;
 }
 header h1 {
     height: 50px;
