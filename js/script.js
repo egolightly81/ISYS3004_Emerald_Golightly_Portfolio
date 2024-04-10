@@ -1,19 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const projectImages = document.querySelectorAll('.project-img');
-    const modal = document.getElementById('modal'); // Updated selection using ID
-    const modalImg = document.querySelector('.modal-img');
-    const modalDesc = document.querySelector('.modal-desc');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxDesc = document.getElementById('lightbox-desc');
 
-    projectImages.forEach(img => {
-        img.addEventListener('click', () => {
-            modal.style.display = 'block';
-            modalImg.src = img.src;
-            modalDesc.textContent = img.alt;
-        });
-    });
-
-    modal.addEventListener('click', () => {
-        modal.style.display = 'none';
+    lightboxImg.addEventListener('click', () => {
+        lightboxImg.classList.add('hidden');
+        lightboxDesc.classList.add('hidden');
     });
 
     const contactForm = document.getElementById('contact-form');
@@ -43,3 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1  + https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87 
+// https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
