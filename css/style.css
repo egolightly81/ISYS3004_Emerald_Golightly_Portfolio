@@ -1,11 +1,10 @@
 body {
     width: 600px;
-    margin: 20 auto;
-    padding: 20;
+    margin: 20px auto; /* Added "px" unit to margin */
+    padding: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Header Styles */
 header {
     background-color: lightgray;
 }
@@ -13,25 +12,21 @@ header h1 {
     height: 40px;
     line-height: 50px;
 }
-/* Navigation Styles */
-nav{
+nav {
     background-color: darkgray;
     text-align: left;
     padding: 10px;
 }
-
 nav a {
     color: white;
     text-align: center;
     padding: 8px 12px;
     text-decoration: none;
 }
-
 nav a:hover {
     background-color: lightgray;
     color: black;
 }
-
 #featured {
     background-color: lightgray;
     float: left;
@@ -41,28 +36,34 @@ nav a:hover {
     float: right;
     width: 500px;
 }
+
 #extras {
     background-color: lightgray;
     float: left;
     width: 200px;
 }
+
 #extras p {
-    font-size: 40%;
+    font-size: 14px; /* Adjusted font size */
     text-align: center;
     line-height: normal;
 }
+
 footer {
-    clear:both; 
+    clear: both;
     text-align: center;
     background-color: darkgray;
 }
+
 footer a {
     color: white;
     text-decoration: none;
 }
+
 p {
     margin: 0 12px 12px;
 }
+
 /* Form Styles */
 form {
     max-width: 400px;
@@ -94,19 +95,16 @@ form button {
     font-size: 16px;
 }
 
-/* Footer Styles */
-
+/* Footer Styles - Merged */
 footer {
-    clear:both; 
+    clear:both;
     text-align: center;
     background-color: darkgray;
 }
+
 footer a {
     color: white;
     text-decoration: none;
-}
-p {
-    margin: 0 10px 10px;
 }
 
 .social-links {
@@ -125,4 +123,4 @@ p {
     font-weight: bold;
 }
 
-
+// removed duplicate footer and edited using info from ChatGPT https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
