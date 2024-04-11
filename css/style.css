@@ -4,6 +4,14 @@ body {
     padding: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode body {
+    background-color: #1f1f1f;
+    color: #ffffff;
 }
 
 header {
@@ -19,7 +27,7 @@ header h1 {
     color: white;
 }
 
-nav{
+nav {
     background-color: darkgray;
     text-align: left;
     padding: 10px;
@@ -42,15 +50,18 @@ nav a:hover {
     float: left;
     width: 200px;
 }
+
 #content {
     float: right;
     width: 500px;
 }
+
 #extras {
     background-color: lightgray;
     float: left;
     width: 200px;
 }
+
 #extras p {
     font-size: 40%;
     text-align: center;
@@ -60,6 +71,7 @@ nav a:hover {
 p {
     margin: 0 12px 12px;
 }
+
 /* Form Styles */
 form {
     max-width: 400px;
@@ -92,18 +104,14 @@ form button {
 }
 
 /* Footer Styles */
-
 footer {
-    clear:both; 
+    clear:both;
     text-align: center;
-    background-color: darkgray;
 }
+
 footer a {
     color: white;
     text-decoration: none;
-}
-p {
-    margin: 0 10px 10px;
 }
 
 .social-links {
@@ -120,5 +128,4 @@ p {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-
-// removed duplicate footer and edited using info from ChatGPT https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
+}

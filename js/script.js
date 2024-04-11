@@ -30,6 +30,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     contactForm.addEventListener('submit', handleSubmit);
+
+    // Dark mode toggle functionality
+    const darkModeToggle = document.getElementById('darkModeToggle');
+
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        
+        // Save the user's preference to localStorage
+        const isDarkMode = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
+    }
+
+    darkModeToggle.addEventListener('change', toggleDarkMode);
+
+    const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
+    if (isDarkModePreferred) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+    }
 });
 
 
