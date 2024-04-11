@@ -9,12 +9,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode {
-    background-color: #1f1f1f;
-    color: #ffffff;
-}
-
-
 header {
     background-color: rgb(30, 22, 176);
     width: 600px;
