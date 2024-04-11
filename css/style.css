@@ -22,6 +22,11 @@ header h1 {
     color: white;
 }
 
+header h2 {
+    height: 25px;
+    line-height: 15px;
+    color: white;
+}
 nav {
     background-color: darkgray;
     text-align: left;
