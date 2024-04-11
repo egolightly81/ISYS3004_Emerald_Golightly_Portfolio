@@ -1,13 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxDesc = document.getElementById('lightbox-desc');
-
-    lightboxImg.addEventListener('click', () => {
-        lightboxImg.classList.add('hidden');
-        lightboxDesc.classList.add('hidden');
-    });
-
-    const contactForm = document.getElementById('contact-form');
+const contactForm = document.getElementById('contact-form');
 
     function handleSubmit(event) {
         event.preventDefault(); // Prevent default form submission
