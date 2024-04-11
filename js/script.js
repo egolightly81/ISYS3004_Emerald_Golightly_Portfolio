@@ -44,21 +44,5 @@ const contactForm = document.getElementById('contact-form');
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1  + https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87 
 // https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
