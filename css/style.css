@@ -1,3 +1,32 @@
+/* Fix the header and navbar at the top */
+.header {
+    background-color: rgb(30, 22, 176);
+    width: 100%;
+    padding: 10px 0; /* Adjust padding as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+    padding: 10px 0; /* Adjust padding as needed */
+    position: fixed;
+    top: 50px; /* Adjust based on the height of the header */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Add padding to the content to prevent it from being hidden behind the fixed header and navbar */
+body {
+    padding-top: 100px; /* Adjust based on the combined height of header and navbar */
+}
+
+/* Your existing CSS styles below this */
 body {
     width: 600px;
     margin: 20px auto;
@@ -30,8 +59,8 @@ header h2 {
 
 /* Style the new navigation bar */
 .navbar {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Change to flex to create a horizontal layout */
+    justify-content: center; /* Center the buttons horizontally */
     background-color: darkgray;
     padding: 10px;
 }
@@ -39,7 +68,7 @@ header h2 {
 .navbar ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
+    display: flex; /* Make the list items flex to align horizontally */
 }
 
 .navbar li {
