@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Clear form inputs after submission
         form.reset();
+
+        // Display success message
+        const submitMessage = document.createElement('div');
+        submitMessage.classList.add('submit-message');
+        submitMessage.textContent = "Form submitted successfully!";
+        form.appendChild(submitMessage);
+        setTimeout(() => {
+            submitMessage.remove();
+        }, 3000);
     });
 
     const darkModeToggle = document.getElementById('darkModeToggle');
@@ -23,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     darkModeToggle.addEventListener('click', function () {
         const body = document.body;
         const isDarkMode = body.classList.toggle('dark-mode');
-        
+
         // Save the user's preference to localStorage
         localStorage.setItem('darkMode', isDarkMode);
     });

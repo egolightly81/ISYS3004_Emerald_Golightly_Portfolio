@@ -82,21 +82,58 @@ header h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #1f1f1f;
-    color: #ffffff;
+/* Contact Form Styles */
+#contact-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-body.dark-mode .navbar {
-    background-color: rgba(0, 0, 0, 0.8);
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-body.dark-mode .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-body.dark-mode .content {
-    background-color: #333; /* Dark background for content */
-    color: #fff; /* Light text color for content */
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Success Message Styles */
+.submit-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Dark Mode Styles for Contact Form and Success Message */
+body.dark-mode #contact-form {
+    background-color: #333; /* Dark background for contact form */
+    color: #fff; /* Light text color for contact form */
+}
+
+body.dark-mode .submit-message {
+    color: #fff; /* Light text color for success message */
 }
