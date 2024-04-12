@@ -1,3 +1,4 @@
+/* General styles */
 body {
     width: 600px;
     margin: 20px auto;
@@ -8,70 +9,78 @@ body {
     color: #000000;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 header {
     background-color: rgb(30, 22, 176);
-    width: 600px;
+    width: 100%;
+    padding: 10px 0;
     margin: 0;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
 header h1 {
     height: 50px;
     line-height: 50px;
     color: white;
 }
+
 header h2 {
     height: 10px;
     line-height: 10px;
     color: white;
 }
-nav {
+
+.navbar {
+    display: flex;
+    justify-content: center;
     background-color: darkgray;
-    text-align: left;
-    padding: 10px;
+    padding: 10px 0;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
-nav a {
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
     color: white;
-    text-align: center;
-    padding: 8px 12px;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-nav a:hover {
+
+.navbar a:hover {
     background-color: lightgray;
     color: black;
 }
-#featured {
-    background-color: lightgray;
-    float: left;
-    width: 200px;
-}
-#content {
-    float: right;
-    width: 500px;
-}
-#extras {
-    background-color: lightgray;
-    float: left;
-    width: 200px;
-}
-#extras p {
-    font-size: 40%;
-    text-align: center;
-    line-height: normal;
-}
-p {
-    margin: 0 12px 12px;
-}
+
 /* Form Styles */
 form {
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
 }
+
 form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 form input,
 form textarea {
     width: 100%;
@@ -80,6 +89,7 @@ form textarea {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 form button {
     background-color: #333;
     color: #fff;
@@ -88,23 +98,28 @@ form button {
     cursor: pointer;
     font-size: 16px;
 }
+
 /* Footer Styles */
 footer {
-    clear:both;
+    clear: both;
     text-align: center;
 }
+
 footer a {
     color: white;
     text-decoration: none;
 }
+
 .social-links {
     list-style-type: none;
     padding: 0;
 }
+
 .social-links li {
     display: inline-block;
     margin-right: 10px;
 }
+
 .social-links li a {
     color: #fff;
     text-decoration: none;
@@ -158,11 +173,6 @@ input:checked + .slider:before {
 }
 
 /* Other CSS styles */
-
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 body.light-mode {
     background-color: #ffffff;
     color: #000000;
