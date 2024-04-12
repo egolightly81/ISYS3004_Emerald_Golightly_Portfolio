@@ -1,32 +1,4 @@
-/* Fix the header and navbar at the top */
-.header {
-    background-color: rgb(30, 22, 176);
-    width: 100%;
-    padding: 10px 0; /* Adjust padding as needed */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: darkgray;
-    padding: 10px 0; /* Adjust padding as needed */
-    position: fixed;
-    top: 50px; /* Adjust based on the height of the header */
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-/* Add padding to the content to prevent it from being hidden behind the fixed header and navbar */
-body {
-    padding-top: 100px; /* Adjust based on the combined height of header and navbar */
-}
-
-/* Your existing CSS styles below this */
+/* General styles */
 body {
     width: 600px;
     margin: 20px auto;
@@ -40,9 +12,13 @@ body {
 
 header {
     background-color: rgb(30, 22, 176);
-    width: 600px;
+    width: 100%;
+    padding: 10px 0;
     margin: 0;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -57,18 +33,22 @@ header h2 {
     color: white;
 }
 
-/* Style the new navigation bar */
 .navbar {
-    display: flex; /* Change to flex to create a horizontal layout */
-    justify-content: center; /* Center the buttons horizontally */
+    display: flex;
+    justify-content: center;
     background-color: darkgray;
-    padding: 10px;
+    padding: 10px 0;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Make the list items flex to align horizontally */
+    display: flex;
 }
 
 .navbar li {
@@ -121,7 +101,7 @@ form button {
 
 /* Footer Styles */
 footer {
-    clear:both;
+    clear: both;
     text-align: center;
 }
 
@@ -193,11 +173,6 @@ input:checked + .slider:before {
 }
 
 /* Other CSS styles */
-
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 body.light-mode {
     background-color: #ffffff;
     color: #000000;
