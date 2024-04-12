@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
 
-    form.addEventListener("submit", function (event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent default form submission
 
         // Get form data
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Display submitted data (you can modify this part based on your needs)
-        console.log("Submitted data:", data);
+        console.log('Submitted data:', data);
 
         // Clear form inputs after submission
         form.reset();
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Display success message
         const submitMessage = document.createElement('div');
         submitMessage.classList.add('submit-message');
-        submitMessage.textContent = "Form submitted successfully!";
+        submitMessage.textContent = 'Form submitted successfully!';
         form.appendChild(submitMessage);
         setTimeout(() => {
             submitMessage.remove();
@@ -29,13 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const darkModeToggle = document.getElementById('darkModeToggle');
 
-    darkModeToggle.addEventListener('click', function () {
+    function toggleDarkMode() {
         const body = document.body;
-        const isDarkMode = body.classList.toggle('dark-mode');
+        body.classList.toggle('dark-mode');
 
         // Save the user's preference to localStorage
+        const isDarkMode = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkMode);
-    });
+    }
+
+    darkModeToggle.addEventListener('change', toggleDarkMode);
 
     // Check if the user previously preferred dark mode
     const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
