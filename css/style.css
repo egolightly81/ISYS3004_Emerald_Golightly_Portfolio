@@ -8,7 +8,7 @@ body {
     background-color: #ffffff;
     color: #000000;
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding-top: 80px;
+    padding-top: 80px; /* Added padding-top */
 }
 
 header {
@@ -75,7 +75,7 @@ header h2 {
 }
 
 .content {
-    margin-top: 70px; 
+    margin-top: 70px; /* Added margin-top */
 }
 
 /* Form Styles */
