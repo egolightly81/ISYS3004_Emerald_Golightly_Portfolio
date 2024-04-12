@@ -1,14 +1,12 @@
 /* General styles */
 body {
-    width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding-top: 80px; /* Added padding-top */
+    padding-top: 80px;
 }
 
 header {
@@ -23,14 +21,15 @@ header {
 }
 
 header h1 {
-    font-size: 28px; 
+    font-size: 28px;
     height: 50px;
     line-height: 50px;
     color: white;
 }
+
 .title {
-    font-size: 24px; 
-    margin: 0; 
+    font-size: 24px;
+    margin: 0;
 }
 
 header h2 {
@@ -42,7 +41,7 @@ header h2 {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: darkgray;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust transparency */
     padding: 10px 0;
     position: fixed;
     top: 50px;
@@ -70,132 +69,34 @@ header h2 {
 }
 
 .navbar a:hover {
-    background-color: lightgray;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust transparency */
+    color: white;
 }
 
 .content {
-    margin-top: 70px; /* Added margin-top */
+    margin-top: 70px;
+    padding: 20px; /* Add padding for content sections */
+    background-color: white; /* Ensure content background is readable */
+    color: black; /* Text color for content */
+    border-radius: 5px; /* Rounded corners for content sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-/* Form Styles */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-form button {
-    background-color: #333;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-}
-
-/* Footer Styles */
-footer {
-    clear: both;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-.social-links {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Dark Mode Toggle Switch */
-.switch {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-}
-
-input:checked + .slider {
-    background-color: #2196F3;
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-/* Other CSS styles */
-body.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-}
-
+/* Dark Mode Styles */
 body.dark-mode {
     background-color: #1f1f1f;
     color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .content {
+    background-color: #333; /* Dark background for content */
+    color: #fff; /* Light text color for content */
 }
