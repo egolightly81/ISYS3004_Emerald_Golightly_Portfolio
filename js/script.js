@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
+    const contactForm = document.getElementById("contact-form");
 
-    form.addEventListener("submit", function (event) {
+    function handleSubmit(event) {
         event.preventDefault(); // Prevent default form submission
 
         // Get form data
-        const formData = new FormData(form);
+        const formData = new FormData(contactForm);
         const data = {};
         formData.forEach((value, key) => {
             data[key] = value;
@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Submitted data:", data);
 
         // Clear form inputs after submission
-        form.reset();
-    });
-});
+        contactForm.reset();
+    }
 
     contactForm.addEventListener('submit', handleSubmit);
+});
+
 
     // Dark mode toggle functionality
     document.addEventListener('DOMContentLoaded', function() {
