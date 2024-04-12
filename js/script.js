@@ -1,24 +1,23 @@
-const contactForm = document.getElementById('contact-form');
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
 
-    function handleSubmit(event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
 
-        // Get form values
-        const name = contactForm.elements['name'].value;
-        const email = contactForm.elements['email'].value;
-        const phone = contactForm.elements['phone'].value;
-        const message = contactForm.elements['message'].value;
+        // Get form data
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
 
-        // Validate form inputs (you can add more validation logic as needed)
-        if (!name || !email || !phone || !message) {
-            alert('Please fill out all fields.');
-            return;
-        }
+        // Display submitted data (you can modify this part based on your needs)
+        console.log("Submitted data:", data);
 
-        // Send form data to backend or perform other actions (e.g., display success message)
-        displayThankYouMessage();
-        contactForm.reset(); // Reset form after submission
-    }
+        // Clear form inputs after submission
+        form.reset();
+    });
+});
 
     contactForm.addEventListener('submit', handleSubmit);
 

@@ -109,6 +109,13 @@ form button {
     font-size: 16px;
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
 /* Footer Styles */
 footer {
     clear: both;
