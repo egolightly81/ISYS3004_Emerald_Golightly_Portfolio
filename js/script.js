@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     contactForm.addEventListener('submit', handleSubmit);
 });
 
-
     // Dark mode toggle functionality
     document.addEventListener('DOMContentLoaded', function() {
         const darkModeToggle = document.getElementById('darkModeToggle');
