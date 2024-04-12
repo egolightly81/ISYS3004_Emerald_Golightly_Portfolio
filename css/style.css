@@ -157,3 +157,25 @@ body.dark-mode {
     background-color: #1f1f1f;
     color: #ffffff;
 }
+
+/* Light Mode Styles */
+body.light-mode #home,
+body.light-mode #about,
+body.light-mode #projects,
+body.light-mode #project1,
+body.light-mode #project2,
+body.light-mode #project3 {
+    background-color: #ffffff; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+/* Dark Mode Styles */
+body.dark-mode #home,
+body.dark-mode #about,
+body.dark-mode #projects,
+body.dark-mode #project1,
+body.dark-mode #project2,
+body.dark-mode #project3 {
+    background-color: #1f1f1f; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
