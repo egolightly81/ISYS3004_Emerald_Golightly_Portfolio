@@ -147,3 +147,14 @@ body.dark-mode .submit-message {
     width: 40px; /* Adjust the width as needed */
     height: 24px; /* Adjust the height as needed */
 }
+
+/* Updated styles to change the entire body */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
