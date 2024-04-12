@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald Golightly Portfolio Website</title>
-    <link rel="stylesheet" href="css/style.css"/>   
-
+    <link rel="stylesheet" href="css/style.css"/>    
     <style>
-        /* CSS styles here */
         /* Centering the submit button */
         #contact-form {
             text-align: center;
         }
-        /* Other styles... */
+        #contact-form button {
+            margin-top: 10px; /* Adjust as needed for spacing */
+            background-color: #007bff; /* Default background color */
+            color: #fff; /* Text color */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        #contact-form button:hover {
+            background-color: #87CEEB; /* Light blue on hover */
+        }
+        /* Hover effect for LinkedIn link */
+        .social-links a {
+            color: #fff;
+            transition: background-color 0.3s ease;
+            background-color: #87CEEB;
+        }
+        .social-links a:hover {
+            background-color: #87CEEB; /* Light blue on hover */
+        }
         body {
             transition: background-color 0.3s ease, color 0.3s ease;
         }
@@ -214,12 +232,6 @@
     </style>
 </head>
 <body>
-    <!-- Your HTML content here -->
-
-    <!-- Dark Mode Toggle Switch -->
-    <input type="checkbox" id="darkModeToggle" class="switch">
-    <label for="darkModeToggle" class="slider"></label>
-    
 <script src="js/script.js"></script>
 </body>
 </html>
