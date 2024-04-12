@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.getElementById("contact-form");
+    const form = document.getElementById("contact-form");
 
-    function handleSubmit(event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
 
         // Get form data
-        const formData = new FormData(contactForm);
+        const formData = new FormData(form);
         const data = {};
         formData.forEach((value, key) => {
             data[key] = value;
@@ -15,25 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Submitted data:", data);
 
         // Clear form inputs after submission
-        contactForm.reset();
-    }
+        form.reset();
+    });
 
-    contactForm.addEventListener('submit', handleSubmit);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
 
-    function toggleDarkMode() {
+    darkModeToggle.addEventListener('click', function () {
         const body = document.body;
-        body.classList.toggle('dark-mode');
-
+        const isDarkMode = body.classList.toggle('dark-mode');
+        
         // Save the user's preference to localStorage
-        const isDarkMode = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkMode);
-    }
-
-    darkModeToggle.addEventListener('change', toggleDarkMode);
+    });
 
     // Check if the user previously preferred dark mode
     const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
