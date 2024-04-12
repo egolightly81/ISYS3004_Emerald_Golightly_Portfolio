@@ -27,20 +27,30 @@ header h2 {
     line-height: 10px;
     color: white;
 }
-nav {
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
     background-color: darkgray;
     text-align: left;
     padding: 10px;
 }
 
-nav a {
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
     color: white;
-    text-align: center;
-    padding: 8px 12px;
     text-decoration: none;
 }
 
-nav a:hover {
+.navbar a:hover {
     background-color: lightgray;
     color: black;
 }
