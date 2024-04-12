@@ -29,8 +29,8 @@ header h1 {
     color: white;
 }
 .title {
-    font-size: 24px; /* Adjust the font size as needed */
-    margin: 0; /* Reset any default margin */
+    font-size: 24px; 
+    margin: 0; 
 }
 
 header h2 {
@@ -72,6 +72,10 @@ header h2 {
 .navbar a:hover {
     background-color: lightgray;
     color: black;
+}
+
+.content {
+    margin-top: 70px; 
 }
 
 /* Form Styles */
