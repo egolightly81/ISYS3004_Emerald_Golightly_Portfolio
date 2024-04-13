@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
+    const darkModeToggle = document.getElementById('darkModeToggle');
 
-    form.addEventListener('submit', function (event) {
+    // Function to handle form submission
+    function handleFormSubmit(event) {
         event.preventDefault(); // Prevent default form submission
 
         // Get form data
@@ -25,19 +27,19 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
             submitMessage.remove();
         }, 3000);
-    });
+    }
 
-    const darkModeToggle = document.getElementById('darkModeToggle');
-
+    // Function to toggle Dark Mode
     function toggleDarkMode() {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
         // Save the user's preference to localStorage
-        const isDarkMode = body.classList.contains('dark-mode');
-        localStorage.setItem('darkMode', isDarkMode);
+        localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
     }
 
+    // Event listeners
+    form.addEventListener('submit', handleFormSubmit);
     darkModeToggle.addEventListener('change', toggleDarkMode);
 
     // Check if the user previously preferred dark mode
@@ -47,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
         darkModeToggle.checked = true;
     }
 });
-
 
 // https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1  + https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87 
 // https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
