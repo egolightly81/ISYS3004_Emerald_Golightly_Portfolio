@@ -31,7 +31,9 @@ header h1 {
     font-size: 24px;
     margin: 0;
 }
-
+.content {
+    padding-top: 60px; /* Add top padding to create space below the fixed navigation bar */
+}
 header h2 {
     height: 10px;
     line-height: 10px;
