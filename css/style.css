@@ -8,6 +8,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     padding-top: 80px;
 }
+
 header {
     background-color: rgb(30, 22, 176);
     width: 100%;
@@ -18,21 +19,25 @@ header {
     left: 0;
     z-index: 1000;
 }
+
 header h1 {
     font-size: 28px;
     height: 50px;
     line-height: 50px;
     color: white;
 }
+
 .title {
     font-size: 24px;
     margin: 0;
 }
+
 header h2 {
     height: 10px;
     line-height: 10px;
     color: white;
 }
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -44,14 +49,17 @@ header h2 {
     width: 100%;
     z-index: 1000;
 }
+
 .navbar ul {
     list-style-type: none;
     padding: 0;
     display: flex;
 }
+
 .navbar li {
     margin: 0 10px;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -59,20 +67,24 @@ header h2 {
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Light mode hover background color */
     color: white;
 }
+
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #1f1f1f;
     color: #ffffff;
 }
+
 body.dark-mode .navbar {
     background-color: rgba(0, 0, 0, 0.8); /* Dark mode background color for navbar */
 }
+
 body.dark-mode .navbar a {
-    color: white; /* Dark mode text color for links */
+    color: #ffffff; /* Dark mode text color for links */
 }
 
 body.dark-mode .navbar a:hover {
