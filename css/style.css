@@ -74,10 +74,29 @@ header h2 {
 }
 
 .content {
-    margin: 20px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the content section to the full viewport height */
+}
+
+#contact-form.contact-container {
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
+    text-align: center; /* Center the contents of the contact container horizontally */
+}
+
+/* Styles for the contact form fields */
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 /* Dark Mode Styles */
