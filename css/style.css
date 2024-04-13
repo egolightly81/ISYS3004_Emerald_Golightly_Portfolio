@@ -70,7 +70,7 @@ header h2 {
 
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Light mode hover background color */
-    color: white;
+    color: black
 }
 
 /* Dark Mode Styles */
