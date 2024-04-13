@@ -102,7 +102,7 @@ header h2 {
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #1f1f1f;
-    color: #000000; /* Black text color in dark mode */
+    color: black; /* Black text color in dark mode */
 }
 
 body.dark-mode .navbar {
