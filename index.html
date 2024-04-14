@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,12 +5,12 @@
     <title>Emerald Golightly Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="landing-page">
+<body>
     <header>
         <h1 class="title">Emerald Golightly Portfolio Website</h1>
     </header>
 
-    <nav id="navbar" class="navbar">
+    <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -21,18 +20,42 @@
     </nav>
 
     <section id="home" class="content">
-        <h2>Welcome to My Portfolio</h2>
-        <p>This portfolio provides an insight into work developed while studying at Curtin University. All material will be referenced in the README.md repository in Github.</p>
+        <h2>
+            Welcome to My Portfolio
+        </h2>
+        <p>This portfolio provides an insight into work developed while studying at Curtin University. 
+            All material will be referenced in the README.md repository in Github.
+        </p>
     </section>
 
     <section id="about" class="content">
         <h2>About Me</h2>
-        <p>Professional Development is very important to me, pivoting in my career has been a strategic approach to ensure I am able to provide industry value, while working on projects that are meaningful to me.</p>
+        <p>Professional Development is very important to me, pivoting in my career has been a strategic approach to ensure I am able to provide industry value, while working on 
+            projects that are meaningful to me.
+        </p>
     </section>
 
     <section id="projects" class="content">
         <h2>My Projects</h2>
         <p>The Projects provided, highlight key areas of technical application when it comes to building an interactive website using HTML, JavaScript, and CSS.</p>
+    </section>
+
+    <section class="project content" id="project1">
+        <h3>Project 1 - Designing a Basic Website</h3>
+        <p>This website has basic design methods using HTML and CSS only.</p>
+        <a href="Project_1_ISYS3004-basic-webpage/index.html" target="_blank">View Project</a>
+    </section>
+
+    <section class="project content" id="project2">
+        <h3>Project 2 - Rock Paper Scissors Game</h3>
+        <p>This website has added JavaScript functionality to allow the user to play Rock Paper Scissors with the Computer.</p>
+        <a href="Project_2_ISYS3004_RPS/index.html" target="_blank">View Project</a>
+    </section>
+
+    <section class="project content" id="project3">
+        <h3>Project 3 - Welcome to Flatland</h3>
+        <p>This website has more advanced functionality added using JavaScript, including mouse hover and click-on features, to showcase the use of dynamic text.</p>
+        <a href="Project_3_ISYS3004_Flatland/index.html" target="_blank">View Project</a>
     </section>
 
     <section id="contact" class="content">
@@ -61,8 +84,8 @@
     </footer>
 
     <!-- Dark Mode Toggle Switch -->
-    <input type="checkbox" id="darkModeToggle" class="switch">
-    <label for="darkModeToggle" class="slider"></label>
+<input type="checkbox" id="darkModeToggle" class="switch">
+<label for="darkModeToggle" class="slider"></label>
 
     <script src="js/script.js"></script>
 </body>
