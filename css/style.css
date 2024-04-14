@@ -1,15 +1,13 @@
 /* General styles */
 body {
     display: flex;
+    flex-direction: column; /* Added to ensure proper stacking of elements */
     width: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 header {
@@ -28,6 +26,7 @@ header h1 {
     height: 50px;
     line-height: 50px;
     color: white;
+    margin: 0; /* Added to remove default margin */
 }
 
 .title {
@@ -96,11 +95,6 @@ body.dark-mode .navbar a {
 
 body.dark-mode .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
-}
-
-/* Hide navbar on landing page */
-body.landing-page .navbar {
-    display: none;
 }
 
 /* Disable scrolling on landing page */
