@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,6 @@
     <header>
         <h1 class="title">Emerald Golightly Portfolio Website</h1>
     </header>
-
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -18,61 +18,48 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
     <section id="home" class="content">
-        <h2>
-            Welcome to My Portfolio
-        </h2>
+        <h2>Welcome to My Portfolio</h2>
         <p>This portfolio provides an insight into work developed while studying at Curtin University. 
             All material will be referenced in the README.md repository in Github.
         </p>
     </section>
-
     <section id="about" class="content">
         <h2>About Me</h2>
         <p>Professional Development is very important to me, pivoting in my career has been a strategic approach to ensure I am able to provide industry value, while working on 
             projects that are meaningful to me.
         </p>
     </section>
-
     <section id="projects" class="content">
         <h2>My Projects</h2>
         <p>The Projects provided, highlight key areas of technical application when it comes to building an interactive website using HTML, JavaScript, and CSS.</p>
     </section>
-
     <section class="project content" id="project1">
         <h3>Project 1 - Designing a Basic Website</h3>
         <p>This website has basic design methods using HTML and CSS only.</p>
         <a href="Project_1_ISYS3004-basic-webpage/index.html" target="_blank">View Project</a>
     </section>
-
     <section class="project content" id="project2">
         <h3>Project 2 - Rock Paper Scissors Game</h3>
         <p>This website has added JavaScript functionality to allow the user to play Rock Paper Scissors with the Computer.</p>
         <a href="Project_2_ISYS3004_RPS/index.html" target="_blank">View Project</a>
     </section>
-
     <section class="project content" id="project3">
         <h3>Project 3 - Welcome to Flatland</h3>
         <p>This website has more advanced functionality added using JavaScript, including mouse hover and click-on features, to showcase the use of dynamic text.</p>
         <a href="Project_3_ISYS3004_Flatland/index.html" target="_blank">View Project</a>
     </section>
-
     <section id="contact" class="content">
         <h2>Contact Me</h2>
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
             <button type="submit">Submit</button>
         </form>
     </section>
@@ -83,9 +70,10 @@
         </ul>
     </footer>
 
+      <!-- Dark Mode Toggle Switch -->
     <!-- Dark Mode Toggle Switch -->
-<input type="checkbox" id="darkModeToggle" class="switch">
-<label for="darkModeToggle" class="slider"></label>
+    <input type="checkbox" id="darkModeToggle" class="switch">
+    <label for="darkModeToggle" class="slider"></label>
 
     <script src="js/script.js"></script>
 </body>
