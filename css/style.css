@@ -43,7 +43,7 @@ header h2 {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: rgb(30, 22, 176); /* Light mode background color */
+    background-color: rgb(96, 89, 225); /* Light mode background color */
     padding: 10px 0;
     position: fixed;
     top: 50px;
