@@ -40,9 +40,11 @@ header h2 {
     color: white;
 }
 
+/* Navbar styles */
 .navbar {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
     background-color: rgb(96, 89, 225); /* Light mode background color */
     padding: 10px 0;
     position: fixed;
@@ -56,10 +58,11 @@ header h2 {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-direction: column; /* Arrange items vertically */
 }
 
 .navbar li {
-    margin: 0 10px;
+    margin: 10px 0; /* Adjust vertical margin */
 }
 
 .navbar a {
