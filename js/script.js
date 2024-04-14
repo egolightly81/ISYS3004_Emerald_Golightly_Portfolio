@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
     const darkModeToggle = document.getElementById('darkModeToggle');
-    const navbar = document.getElementById('navbar');
 
     // Function to handle form submission
     function handleFormSubmit(event) {
@@ -62,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', handleFormSubmit);
     darkModeToggle.addEventListener('change', toggleDarkMode);
 
-    // Check if this is the landing page and hide navbar
-    if (window.location.pathname === "/") {
-        navbar.style.display = "none";
-        document.body.style.overflow = "hidden"; // Disable scrolling
+    // Check if the user previously preferred dark mode
+    const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
+    if (isDarkModePreferred) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
     }
 });
-
 // https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1  + https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87 
 // https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
