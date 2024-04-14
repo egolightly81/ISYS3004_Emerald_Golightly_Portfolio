@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
     const darkModeToggle = document.getElementById('darkModeToggle');
+    const navbar = document.getElementById('navbar');
 
     // Function to handle form submission
     function handleFormSubmit(event) {
@@ -61,11 +62,10 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', handleFormSubmit);
     darkModeToggle.addEventListener('change', toggleDarkMode);
 
-    // Check if the user previously preferred dark mode
-    const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
-    if (isDarkModePreferred) {
-        document.body.classList.add('dark-mode');
-        darkModeToggle.checked = true;
+    // Check if this is the landing page and hide navbar
+    if (window.location.pathname === "/") {
+        navbar.style.display = "none";
+        document.body.style.overflow = "hidden"; // Disable scrolling
     }
 });
 
