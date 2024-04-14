@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
 
         // Display success message
-        const submitMessage = document.createElement('p');
-        submitMessage.id = 'submit-message';
+        const submitMessage = document.createElement('div');
+        submitMessage.classList.add('submit-message');
         submitMessage.textContent = 'Form submitted successfully!';
         form.appendChild(submitMessage);
         setTimeout(() => {
@@ -29,36 +29,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000);
     }
 
-    // Attach form submission handler to the form
-    form.addEventListener('submit', handleFormSubmit);
-
-    // Dark mode toggle functionality
-    darkModeToggle.addEventListener('click', function () {
-        const body = document.body;
-        const isDarkMode = body.classList.toggle('dark-mode');
-
-        // Save the user's preference to localStorage
-        localStorage.setItem('darkMode', isDarkMode);
-    });
-
-    // Check if the user previously preferred dark mode
-    const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
-    if (isDarkModePreferred) {
-        document.body.classList.add('dark-mode');
-        darkModeToggle.checked = true;
-    }
-
     // Function to toggle Dark Mode
-    function toggleDarkMode() {
+    function toggleDarkMode(event) {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
         // Save the user's preference to localStorage
-        localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+        const isDarkMode = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
     }
 
-    // Event listeners
+    // Event listener for form submission
     form.addEventListener('submit', handleFormSubmit);
+
+    // Event listener for dark mode toggle
     darkModeToggle.addEventListener('change', toggleDarkMode);
 
     // Check if the user previously preferred dark mode
@@ -68,5 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
         darkModeToggle.checked = true;
     }
 });
+
 // https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1  + https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87 
 // https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
