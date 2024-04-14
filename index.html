@@ -6,7 +6,7 @@
     <title>Emerald Golightly Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="landing-page">
     <header>
         <h1 class="title">Emerald Golightly Portfolio Website</h1>
     </header>
@@ -35,8 +35,32 @@
         <p>The Projects provided, highlight key areas of technical application when it comes to building an interactive website using HTML, JavaScript, and CSS.</p>
     </section>
 
-    <!-- Other sections and footer -->
+    <section id="contact" class="content">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/emerald-golightly-16a33a287" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <!-- Dark Mode Toggle Switch -->
     <input type="checkbox" id="darkModeToggle" class="switch">
     <label for="darkModeToggle" class="slider"></label>
 
