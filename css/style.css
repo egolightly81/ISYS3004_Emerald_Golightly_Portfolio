@@ -82,6 +82,7 @@ body.dark-mode .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
 }
 .social-links a {
+    display: flex;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
