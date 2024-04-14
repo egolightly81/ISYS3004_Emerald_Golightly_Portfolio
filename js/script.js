@@ -20,13 +20,32 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
 
         // Display success message
-        const submitMessage = document.createElement('div');
-        submitMessage.classList.add('submit-message');
+        const submitMessage = document.createElement('p');
+        submitMessage.id = 'submit-message';
         submitMessage.textContent = 'Form submitted successfully!';
         form.appendChild(submitMessage);
         setTimeout(() => {
             submitMessage.remove();
         }, 3000);
+    }
+
+    // Attach form submission handler to the form
+    form.addEventListener('submit', handleFormSubmit);
+
+    // Dark mode toggle functionality
+    darkModeToggle.addEventListener('click', function () {
+        const body = document.body;
+        const isDarkMode = body.classList.toggle('dark-mode');
+
+        // Save the user's preference to localStorage
+        localStorage.setItem('darkMode', isDarkMode);
+    });
+
+    // Check if the user previously preferred dark mode
+    const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
+    if (isDarkModePreferred) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
     }
 
     // Function to toggle Dark Mode
