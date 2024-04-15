@@ -1,37 +1,51 @@
-    // Determine the result based on the user's choice
-    let result = "";
-    if (user === 'rock') {
-        result = "tie";
-        draws++;
-    } else if (user === 'paper') {
-        result = "win";
-        wins++;
-    } else if (user === 'scissors') {
-        result = "loses"; // Consider changing this to "loses" for correct spelling
-        loses++;
+console.log("script Loaded");
+
+//1. assign variables to DOM elements 
+
+let addTaskButton = document.getElementById("add-button");
+let newTaskInput = document.getElementById("task-input");
+let todoListContainer = document.getElementById("todo-list");
+let templateElement = document.getElementById("todo-item-template");
+let template = templateElement.innerHTML;
+
+/* Step 2. Lets write the function to handle the 'click' event
+---------------------------------------------------------------*/
+
+function onAddTaskClicked(event) {
+    console.log("hello world");
+    // Get the contents of the input box
+    let taskName = newTaskInput.value;
+    console.log(taskName);
+    // clear the input box 
+    newTaskInput.value = "";
+
+    // Search and replace to add task name (found above)
+    let todoHTML = template.replace("<!----TASK_NAME---->", taskName);
+
+    // we have the formatted HTML, let's insert it into the to-do container 
+    todoListContainer.insertAdjacentHTML('afterbegin', todoHTML);
+}
+
+function onTodoClicked(event) {
+    let targetElement = event.target;
+
+    while (targetElement && !targetElement.classList.contains("task")) {
+        targetElement = targetElement.parentElement;
     }
 
-    // Construct the message with game outcome and scores
-    let mymessage = "Computer chose rock, you " + result + "!" + 
-        "\n\n" + wins + " wins" +
-        "\n\n" + loses + " loses" +
-        "\n\n" + draws + " draws";
-    
-    // Display the message in an alert and speak it
-    alert(mymessage);
-    say(mymessage);
+    if (targetElement) {
+        let checkbox = targetElement.querySelector(".checkbox");
 
-// Variables to keep track of wins, loses, and draws
-let wins = 0; 
-let loses = 0; 
-let draws = 0;
-
-// Function to speak a message using SpeechSynthesis API
-function say(themessage) {
-    let msg = new SpeechSynthesisUtterance(themessage);
-    speechSynthesis.speak(msg);
+        if (checkbox && checkbox.checked) {
+            targetElement.classList.add("completed");
+        } else {
+            targetElement.classList.remove("completed");
+        }
+    }
 }
 
 
-/* trouble shooting with Chat GPT - Reference accessed 25/03/24 - concersation downloaded as reference for portfolio 
-Removed console.log handler */
+/* Step 3 make the event trigger our functions
+-----------------------------------------------*/ 
+addTaskButton.addEventListener('click', onAddTaskClicked);
+todoListContainer.addEventListener('click', onTodoClicked);
