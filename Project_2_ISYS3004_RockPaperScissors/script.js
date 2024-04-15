@@ -1,51 +1,25 @@
-console.log("script Loaded");
+// JavaScript (script.js)
 
-//1. assign variables to DOM elements 
-
-let addTaskButton = document.getElementById("add-button");
-let newTaskInput = document.getElementById("task-input");
-let todoListContainer = document.getElementById("todo-list");
-let templateElement = document.getElementById("todo-item-template");
-let template = templateElement.innerHTML;
-
-/* Step 2. Lets write the function to handle the 'click' event
----------------------------------------------------------------*/
-
-function onAddTaskClicked(event) {
-    console.log("hello world");
-    // Get the contents of the input box
-    let taskName = newTaskInput.value;
-    console.log(taskName);
-    // clear the input box 
-    newTaskInput.value = "";
-
-    // Search and replace to add task name (found above)
-    let todoHTML = template.replace("<!----TASK_NAME---->", taskName);
-
-    // we have the formatted HTML, let's insert it into the to-do container 
-    todoListContainer.insertAdjacentHTML('afterbegin', todoHTML);
+function play(user) {
+    let result = "";
+    if (user === 'rock') {
+        result = "tie";
+    } else if (user === 'paper') {
+        result = "win";
+    } else if (user === 'scissors') {
+        result = "lose";
+    }
+    alert("Computer chose rock, you " + result + "!");
 }
 
-function onTodoClicked(event) {
-    let targetElement = event.target;
+document.getElementById('rock-btn').addEventListener('click', function() {
+    play('rock');
+});
 
-    while (targetElement && !targetElement.classList.contains("task")) {
-        targetElement = targetElement.parentElement;
-    }
+document.getElementById('paper-btn').addEventListener('click', function() {
+    play('paper');
+});
 
-    if (targetElement) {
-        let checkbox = targetElement.querySelector(".checkbox");
-
-        if (checkbox && checkbox.checked) {
-            targetElement.classList.add("completed");
-        } else {
-            targetElement.classList.remove("completed");
-        }
-    }
-}
-
-
-/* Step 3 make the event trigger our functions
------------------------------------------------*/ 
-addTaskButton.addEventListener('click', onAddTaskClicked);
-todoListContainer.addEventListener('click', onTodoClicked);
+document.getElementById('scissors-btn').addEventListener('click', function() {
+    play('scissors');
+});
