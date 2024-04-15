@@ -102,3 +102,13 @@ body.dark-mode .social-links a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
     color: #fff;
 }
+.social-links {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    position: fixed;
+    bottom: 20px; /* Adjust this value based on your layout */
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); /* Center align horizontally */
+    z-index: auto;
+}
