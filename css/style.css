@@ -80,17 +80,21 @@ body.dark-mode .navbar a {
 body.dark-mode .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
 }
-.social-links a {
+
+social-links a {
     display: flex;
     color: #fff;
-    background-color: #1f1f1f;
+    color: #f0e6e6;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .social-links a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Light mode hover background color */
     color: #fff;
+    color: #501ddd;
 }
+
 /* Dark Mode Styles */
 body.dark-mode .social-links a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
