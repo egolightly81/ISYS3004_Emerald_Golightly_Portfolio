@@ -87,6 +87,8 @@ social-links a {
     color: #f0e6e6;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
+    position: fixed;
+    z-index: auto;
 }
 
 .social-links a:hover {
