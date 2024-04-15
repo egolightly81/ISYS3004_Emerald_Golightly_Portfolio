@@ -6,11 +6,11 @@
     <title>Emerald Golightly Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
         <h1 class="title">Emerald Golightly Portfolio Website</h1>
     </header>
+
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -21,6 +21,9 @@
     </nav>
 
     <section id="home" class="content">
+        <h2>
+            Welcome to My Portfolio
+        </h2>
         <h2>Welcome to My Portfolio</h2>
         <p>This portfolio provides an insight into work developed while studying at Curtin University. 
             All material will be referenced in the README.md repository in Github.
@@ -46,9 +49,9 @@
     </section>
 
     <section class="project content" id="project2">
-        <h3>Project 2 - Rock Paper</h3>
-        <p>This interactive website provides the opportunity for a user to play a game of Rock Paper Scissors with the Computer.</p>
-        <a href="Project_2_ISYS3004_RockPaperScissors/" target="_blank">View Project</a>
+        <h3>Project 2 - Rock Paper Scissors Game</h3>
+        <p>This website has added JavaScript functionality to allow the user to play Rock Paper Scissors with the Computer.</p>
+        <a href="Project_2_ISYS3004_RPS/index.html" target="_blank">View Project</a>
     </section>
 
     <section class="project content" id="project3">
@@ -62,16 +65,18 @@
         <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
+
             <button type="submit">Submit</button>
         </form>
-        <!-- Success message span -->
-        <span id="submit-message"></span>
     </section>
     
     <footer>
@@ -80,7 +85,10 @@
         </ul>
     </footer>
 
+      <!-- Dark Mode Toggle Switch -->
     <!-- Dark Mode Toggle Switch -->
+<input type="checkbox" id="darkModeToggle" class="switch">
+<label for="darkModeToggle" class="slider"></label>
     <input type="checkbox" id="darkModeToggle" class="switch">
     <label for="darkModeToggle" class="slider"></label>
 
