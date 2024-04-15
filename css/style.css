@@ -105,6 +105,8 @@ body.dark-mode .navbar a:hover {
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 8px 12px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add border radius for rounded corners */
 }
 
 .social-links a:hover {
@@ -115,4 +117,5 @@ body.dark-mode .navbar a:hover {
 /* Dark Mode Styles */
 body.dark-mode .social-links a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
+    color: #fff;
 }
