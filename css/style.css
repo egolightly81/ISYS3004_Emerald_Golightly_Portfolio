@@ -102,7 +102,7 @@ body.dark-mode .navbar a:hover {
 }
 
 .social-links a {
-    color: #fff;
+    color: #3c3333;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
     padding: 8px 12px; /* Add padding for better visibility */
