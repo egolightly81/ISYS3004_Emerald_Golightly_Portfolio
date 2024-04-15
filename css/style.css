@@ -101,6 +101,11 @@ body.dark-mode .navbar a:hover {
     margin-top: 20px; /* Adjust as needed */
 }
 
+.social-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
 .social-links a {
     color: #666; /* Darker color when dormant */
     text-decoration: none;
