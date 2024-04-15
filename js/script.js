@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
     const darkModeToggle = document.getElementById('darkModeToggle');
+    const socialLinks = document.querySelectorAll('.social-links a');
 
     // Function to handle form submission
     function handleFormSubmit(event) {
@@ -19,13 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // Clear form inputs after submission
         form.reset();
 
+        // Add a success class to the form
+        form.classList.add('form-success');
+
         // Display success message
-        const submitMessage = document.createElement('div');
-        submitMessage.classList.add('submit-message');
+        const submitMessage = document.getElementById('submit-message');
         submitMessage.textContent = 'Form submitted successfully!';
-        form.appendChild(submitMessage);
+
+        // Remove the success class and message after 3 seconds
         setTimeout(() => {
-            submitMessage.remove();
+            form.classList.remove('form-success');
+            submitMessage.textContent = '';
         }, 3000);
     }
 
@@ -39,6 +44,15 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('darkMode', isDarkMode);
     }
 
+    // Function to open social media links in a new tab
+    socialLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            const url = this.getAttribute('href');
+            window.open(url, '_blank'); // Open link in a new tab
+        });
+    });
+
     // Event listener for form submission
     form.addEventListener('submit', handleFormSubmit);
 
@@ -51,20 +65,4 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.add('dark-mode');
         darkModeToggle.checked = true;
     }
-    
-    document.addEventListener('DOMContentLoaded', function () {
-        const socialLinks = document.querySelectorAll('.social-links a');
-    
-        socialLinks.forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault(); // Prevent default link behavior
-                const url = this.getAttribute('href');
-                window.open(url, '_blank'); // Open link in a new tab
-            });
-        });
-    });
-    
 });
-
-// https://chat.openai.com/share/85c4f539-97a3-4fbe-a7f0-ce629f055cd1  + https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87 
-// https://chat.openai.com/share/9de6b8ea-0a6e-4c4e-bdee-20875d42dd87
