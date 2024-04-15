@@ -83,6 +83,7 @@ body.dark-mode .navbar a:hover {
 }
 .social-links a {
     display: flex;
+    background-color: #501ddd;
     color: #f0e6e6;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
