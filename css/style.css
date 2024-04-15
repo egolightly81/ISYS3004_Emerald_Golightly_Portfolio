@@ -114,3 +114,44 @@ body.dark-mode .social-links a:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
     color: #fff;
 }
+
+/* Dark Mode Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px; /* Adjust width as needed */
+    height: 15px; /* Adjust height as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 15px; /* Adjust border-radius to match height/2 for a circular shape */
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 11px; /* Adjust height as needed */
+    width: 11px; /* Adjust width as needed */
+    left: 2px; /* Adjust left position for centering */
+    bottom: 2px; /* Adjust bottom position for centering */
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%; /* Make the slider button circular */
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px); /* Adjust translateX for checked position */
+}
