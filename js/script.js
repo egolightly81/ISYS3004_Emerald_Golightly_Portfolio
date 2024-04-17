@@ -1,6 +1,13 @@
+// Step methodology has been followed 
+
+// Step 1 assign a variable to the dom elements
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
     const darkModeToggle = document.getElementById('darkModeToggle');
+
+// Step 2 write the function to handle the events
 
     // Function to handle form submission
     function handleFormSubmit(event) {
@@ -26,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Save the user's preference to localStorage
         localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
     }
+// Step 3 make the event trigger our functions
 
     // Attach form submission handler to the form
     form.addEventListener('submit', handleFormSubmit);
