@@ -1,23 +1,37 @@
-# ISYS3004_Emerald_Golightly_Portfolio
-Personal Portfolio Website Development
-# Portfolio Website
+# Emerald Golightly Portfolio Website
 
-This is my personal portfolio website showcasing my skills, projects, and biography. The website is built using HTML, CSS, and JavaScript.
+This project is a personal portfolio website showcasing skills, projects, and a short biography. The website is built using HTML, CSS, and JavaScript.
 
 ## Table of Contents
 
 - [Description](#description)
+- [Files Included](#files-included)
 - [Features](#features)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Launching with GitHub Pages](#launching-with-github-pages)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Description
 
-This portfolio website serves as an online resume and showcase of my work. It includes sections for an about me biography, a list of projects, and a contact form for visitors to reach out to me.
+My website is called Emerald Golightly Portfolio Website, it is a static website designed to showcase skills, projects, and a biography. It includes sections for an about me biography, a list of projects, and a contact form for visitors to reach out.
+
+## Files Included
+
+- `index.html`: HTML file containing the structure and content of the website, including sections for home, about, projects, and contact.
+- `style.css`: CSS file containing styles for the website layout, navigation, dark mode toggle, and social links.
+- `script.js`: JavaScript file containing functionality for the dark mode toggle, form submission handling, and local storage for user preferences.
+- `Project_1_ISYS3004-basic-webpage`: Folder containing files for Project 1 - Designing a Basic Website.
+  - `index.html`: HTML file for Project 1.
+  - `style.css`: CSS file for Project 1.
+- `Project_2_ISYS3004_RPS`: Folder containing files for Project 2 - Rock Paper Scissors Game.
+  - `index.html`: HTML file for Project 2.
+  - `script.js`: JavaScript file for Project 2.
+  - `style.css`: CSS file for Project 2.
+- `Project_3_ISYS3004_Flatland`: Folder containing files for Project 3 - Welcome to Flatland.
+  - `index.html`: HTML file for Project 3.
+  - `script.js`: JavaScript file for Project 3.
+  - `style.css`: CSS file for Project 3.
 
 ## Features
 
@@ -26,53 +40,24 @@ This portfolio website serves as an online resume and showcase of my work. It in
 - Dynamic gallery with modal for project details.
 - Form validation for the contact form to ensure all fields are filled out correctly.
 
-## Demo
-
-You can view a live demo of the website at [link-to-demo](https://your-demo-url.com). **CHANGE**
-
 ## Installation
 
 To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/portfolio-website.git ** CHANGE **
-
-
-Navigate to the project directory:
-
+   git clone https://github.com/your-username/portfolio-website.git
    cd portfolio-website
 
-Open the index.html file in your web browser.
+## Reflection Component
+Reflecting on this project, I learned valuable skills in web development, including HTML, CSS, and JavaScript. The project allowed me to showcase my abilities, create an interactive user experience, and improve my design and development workflow.
 
-Launching with GitHub Pages
-You can host your portfolio website using GitHub Pages. Follow these steps:
+## References
 
-Push your changes to GitHub:
+## References
 
-bash
-Copy code
-git add .
-git commit -m "Initial commit"
-git push origin main
-Go to your GitHub repository's Settings tab.
-
-Scroll down to the GitHub Pages section.
-
-Select the branch that contains your website's code (e.g., main or master) and set the folder to root (or / if you have your site's code in the root directory).
-
-Click Save to apply the changes.
-
-Your portfolio website should now be accessible at the URL provided in the GitHub Pages section of your repository settings.
-
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License.
-
-vbnet
-Copy code
-
-In the "Launching with GitHub Pages" section, I've added step-by-step instructions on how to host your portfolio website using GitHub Pages. These instructions guide users through the process of setting up GitHub Pages for their repository.
-
+- [W3Schools](https://www.w3schools.com/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [GitHub First Conversation](https://chat.openai.com/share/88a133bd-6d36-4d57-a88a-e9105180151c)
+- [GitHub Contact Form Conversation 1 ](https://chat.openai.com/share/861223e4-81e7-4476-8282-1f2b746f5846)
+- [GitHub Hide Nav Bar Conversation] (https://chat.openai.com/share/75102495-a63a-4ab8-84fc-561e8a3f10e2)
