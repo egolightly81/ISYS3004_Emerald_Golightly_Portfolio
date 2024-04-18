@@ -67,3 +67,4 @@ Reflecting on this project, I learned valuable skills in web development, includ
 - [GitHub Aside Tag for Box Float conversation](https://chat.openai.com/share/ebac2375-4cd6-4986-945e-fa2e9aed1de2)
 - [GitHub Footer Conversation](https://chat.openai.com/share/68b5d870-63f9-4957-bb05-f201dc22ace8)
 - [GitHub Testing and Debugging](https://chat.openai.com/share/20fd60fe-9529-4b16-a70b-ae3fc97b91f0)
+- [GitHub Dark Mode Toggle Conversation 2](https://chat.openai.com/share/efb343ca-19ab-4c2b-b64a-ec1d77b6b2ed)
