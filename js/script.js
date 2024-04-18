@@ -27,16 +27,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Event listener for form submission
-    form.addEventListener('submit', handleFormSubmit);
+    if (form) { // Check if form exists before adding event listener
+        form.addEventListener('submit', handleFormSubmit);
+    }
 
     // Event listener for dark mode toggle
-    darkModeToggle.addEventListener('click', toggleDarkMode);
+    if (darkModeToggle) { // Check if darkModeToggle button exists before adding event listener
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+    }
 
     // Check if the user previously preferred dark mode
     const isDarkModePreferred = JSON.parse(localStorage.getItem('darkMode'));
     if (isDarkModePreferred) {
         body.classList.add('dark-mode');
-        darkModeToggle.checked = true;
+        if (darkModeToggle) { // Check if darkModeToggle button exists before setting checked state
+            darkModeToggle.checked = true;
+        }
     }
 });
 
