@@ -14,7 +14,6 @@
     </style>
 </head>
 <body>
-    <button id="darkModeToggle">Toggle Dark Mode</button>
 
     <header>
         <h1 class="title">Emerald Golightly Portfolio Website</h1>
@@ -106,16 +105,16 @@
             </li>
         </ul>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
 
-            darkModeToggle.addEventListener('click', function () {
-                body.classList.toggle('dark-mode');
-            });
-        });
-    </script>
-<script src="js/script.js"></script>
+<!-- Dark Mode Toggle Switch -->
+   
+    <label for="darkModeToggle" class="slider"></label>
+        <input type="checkbox" id="darkModeToggle" class="switch">
+    <label 
+        for="darkModeToggle" class="slider">
+    </label>
+       
+    <script src="js/script.js"></script>
 </body>
 </html>
+
