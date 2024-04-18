@@ -97,7 +97,7 @@ header h1.title {
 }
 /* CSS for making social icons smaller */
 .social-icon {
-    width: 20px; /* Adjust the width as needed */
+    width: 10px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-right: 5px; /* Optional spacing between icons */
 }
