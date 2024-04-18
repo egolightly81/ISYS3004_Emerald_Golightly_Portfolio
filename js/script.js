@@ -29,3 +29,5 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.add('dark-mode');
     }
 });
+
+// Refer to README.md References and this is one iteration https://chat.openai.com/share/74ce467a-fe87-494f-8d23-b3178b5d440a

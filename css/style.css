@@ -1,4 +1,4 @@
-/* General styles */
+/* Website Styles */
 body {
     width: 100%;
     margin: 0;
@@ -29,7 +29,7 @@ header h1.title {
 }
 
 .content {
-    padding-top: 60px; /* Add top padding to create space below the fixed navigation bar */
+    padding-top: 60px; 
 }
 
 .navbar {
@@ -75,11 +75,11 @@ header h1.title {
 .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px; 
 }
 
 .social-links ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; /* Remove bullet points - NOTE - Unable to achieve, needs to be reworked*/
     padding: 0;
 }
 
@@ -95,9 +95,12 @@ header h1.title {
     background-color: rgba(255, 255, 255, 0.1); /* Light mode hover background color */
     color: #501ddd;
 }
-/* CSS for making social icons smaller */
+/* https://chat.openai.com/share/74ce467a-fe87-494f-8d23-b3178b5d440a */
 .social-icon {
-    width: 10px; /* Adjust the width as needed */
+    width: 10px; 
     height: auto; /* Maintain aspect ratio */
     margin-right: 5px; /* Optional spacing between icons */
 }
+
+
+/* Refer to README.md References for template structure and website development using ChatGPT AI tools */
