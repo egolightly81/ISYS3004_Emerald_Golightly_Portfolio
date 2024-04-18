@@ -54,9 +54,9 @@ Reflecting on this project, I learned valuable skills in web development, includ
 
 ## References
 
-## References
-
-- [W3Schools](https://www.w3schools.com/)
+- [W3Schools CSS](https://www.w3schools.com/Css/)
+- [W3Schools JavaScript Events](https://www.w3schools.com/js/js_events.asp)
+- [WS3schools HTML Quotes] (https://www.w3schools.com/html/html_quotation_elements.asp)
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [GitHub First Conversation](https://chat.openai.com/share/88a133bd-6d36-4d57-a88a-e9105180151c)
 - [GitHub Contact Form Conversation 1 ](https://chat.openai.com/share/861223e4-81e7-4476-8282-1f2b746f5846)
