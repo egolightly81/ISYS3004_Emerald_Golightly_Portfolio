@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald Golightly Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <button id="darkModeToggle">Toggle Dark Mode</button>
@@ -99,7 +106,16 @@
             </li>
         </ul>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
 
+            darkModeToggle.addEventListener('click', function () {
+                body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
 <script src="js/script.js"></script>
 </body>
 </html>
