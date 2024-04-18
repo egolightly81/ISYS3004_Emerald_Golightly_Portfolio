@@ -20,26 +20,16 @@ header {
     z-index: 1000;
 }
 
-header h1 {
+header h1.title {
     font-size: 28px;
     height: 50px;
     line-height: 50px;
     color: white;
-}
-
-.title {
-    font-size: 24px;
     margin: 0;
 }
 
 .content {
     padding-top: 60px; /* Add top padding to create space below the fixed navigation bar */
-}
-
-header h2 {
-    height: 10px;
-    line-height: 10px;
-    color: white;
 }
 
 .navbar {
@@ -78,14 +68,16 @@ header h2 {
 }
 
 /* Toggle switch styles */
-.switch {
+.toggle-btn {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-.switch input {
+.toggle-btn input {
     opacity: 0;
     width: 0;
     height: 0;
