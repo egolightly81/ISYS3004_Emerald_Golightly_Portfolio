@@ -14,7 +14,13 @@ This project is a personal portfolio website showcasing skills, projects, and a 
 
 ## Description
 
-My website is called Emerald Golightly Portfolio Website, it is a static website designed to showcase skills, projects, and a biography. It includes sections for an about me biography, a list of projects, and a contact form for visitors to reach out.
+My website is called Emerald Golightly Portfolio Website, it is a static website designed to showcase skills, projects, and a biography. It includes sections for an about me biography, a list of projects, and a contact form for visitors to reach out.HTML 5, JavaScript and CSS languages have been used for the front end development of my website.Bestpractices that have been followed are seperation of concerns, to ensure version controls can be isolated throguhout the build.
+HTML 5, JavaScript and CSS languages have been used for the front end development of this website.<br>
+Workflow practices have been followed such as, seperation of concerns, to clean application and issues can be isolated throguhout the build.
+Robust testing and debugging has been applied through iterative version control to deploy the website with an error free final outcome
+All material has been referenced in the README.md repository in Github.
+The website has been validated according to WS3 HTML Syntax guidelines
+The report yeilded 0 errors.
 
 ## Files Included
 
@@ -36,7 +42,7 @@ My website is called Emerald Golightly Portfolio Website, it is a static website
 ## Features
 
 - Responsive design for mobile, tablet, and desktop views.
-- Dark mode toggle for improved accessibility.
+- Dark mode toggle for improved accessibility, labeled at the bottom of the page.
 - Dynamic gallery with modal for project details.
 - Form validation for the contact form to ensure all fields are filled out correctly.
 
