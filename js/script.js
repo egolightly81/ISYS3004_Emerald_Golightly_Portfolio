@@ -1,28 +1,20 @@
-// Step methodology has been followed 
-
-// Step 1 assign a variable to the dom elements
-
-
 document.addEventListener('DOMContentLoaded', function () {
+    // Step 1: Assign variables to the DOM elements
     const form = document.getElementById('contact-form');
     const darkModeToggle = document.getElementById('darkModeToggle');
 
-// Step 2 write the function to handle the events
-
-    // Function to handle form submission
+    // Step 2: Function to handle form submission
     function handleFormSubmit(event) {
         event.preventDefault(); // Prevent default form submission
 
-        // Display success message
-        const submitMessage = document.createElement('div');
-        submitMessage.classList.add('submit-message');
-        submitMessage.textContent = 'Form submitted successfully!';
-        form.appendChild(submitMessage);
-
-        // Remove the success message after 3 seconds
-        setTimeout(() => {
-            submitMessage.remove();
-        }, 3000);
+        // Display success message if it exists
+        const submitMessage = document.getElementById('submit-message');
+        if (submitMessage) {
+            submitMessage.classList.add('visible');
+            setTimeout(() => {
+                submitMessage.classList.remove('visible');
+            }, 3000);
+        }
     }
 
     // Function to toggle Dark Mode
@@ -30,10 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const body = document.body;
         body.classList.toggle('dark-mode');
 
-        // Save the user's preference to localStorage
+        // Save the user's preference to localStorage as a boolean
         localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
     }
-// Step 3 make the event trigger our functions
+
+    // Step 3: Make events trigger our functions
 
     // Attach form submission handler to the form
     form.addEventListener('submit', handleFormSubmit);
