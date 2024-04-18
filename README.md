@@ -68,4 +68,7 @@ Reflecting on this project, I learned valuable skills in web development, includ
 - [GitHub Footer Conversation](https://chat.openai.com/share/68b5d870-63f9-4957-bb05-f201dc22ace8)
 - [GitHub Testing and Debugging](https://chat.openai.com/share/20fd60fe-9529-4b16-a70b-ae3fc97b91f0)
 - [GitHub Dark Mode Toggle Conversation 2](https://chat.openai.com/share/efb343ca-19ab-4c2b-b64a-ec1d77b6b2ed)
+- [GitHub New Idea Dark Mode Conversation](https://chat.openai.com/share/74ce467a-fe87-494f-8d23-b3178b5d440a)
 - [GitHub Image Reference Albert Eintstein](https://chat.openai.com/share/00c42422-c5f6-4166-b9ac-edba5b08e94a)
+- [LinkedIn Image](https://th.bing.com/th/id/OIP.VArJwZMxFN-qHnD8Xue-QAHaHa?w=182&h=183&c=7&r=0&o=5&pid=1.7)
+- [GitHub Image](https://th.bing.com/th/id/OIP.rIONbwiwOm_V37ef5VAyDwHaFj?w=231&h=180&c=7&r=0&o=5&pid=1.7)
