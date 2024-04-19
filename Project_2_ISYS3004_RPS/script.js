@@ -23,3 +23,5 @@ document.getElementById('paper-btn').addEventListener('click', function() {
 document.getElementById('scissors-btn').addEventListener('click', function() {
     play('scissors');
 });
+
+// assisted trouble shooting with ChatGPT https://chat.openai.com/share/269586b3-e929-4c86-bdb3-d4d44cb2bf9d
